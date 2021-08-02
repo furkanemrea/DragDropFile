@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Custom Drag&Drop File !</title>
+    <style>
+      body {
+        padding: 20px;
+        height: 100vh;
+      }
+      .dropArea {
+        display: flex;
+        height: 500px;
+        border: 2px dashed purple;
+        align-items: center;
+        justify-content: center;
+      }
+      .dropFile {
+        width: 500px;
+        height: 500px;
+        padding:15px;
+      }
+      .dropArea:hover {
+        cursor: pointer;
+      }
+      .dropArea.over {
+        background-color: aliceblue;
+        border: 2px solid green;
+        font-size: 24px;
+      }
+      .area{
+        width: 500px;
+        height: 500px; 
+      }
+      .info-message {
+        float: right;
+        padding: 4px;
+        background-color: #ea8685;
+        color: white;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="area">
+      <div class="dropArea">
+        <span>Dosyalarınızı Buraya Sürükleyin</span>
+      </div>
+      <span class="info-message"></span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
